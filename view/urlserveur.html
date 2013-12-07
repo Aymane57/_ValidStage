@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Lien du serveur</title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+                  <script src="bootstrap/assets/js/html5shiv.js"></script>
+                  <script src="bootstrap/assets/js/respond.min.js"></script>
+                <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="alert alert-info text-center">
+                <p>Pour fonctionner, l'application a besoin de l'<strong>adresse du serveur</strong> où sont stockés les fichiers PHP.</p>
+                <p>Vous devez saisir ce lien ou choisir le <strong>serveur par défaut</strong> de l'IUT de Metz.</p>			
+            </div>
+            <form class="form-horizontal" action="index.html" id="formulaire_valid"	onSubmit="return false;">
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <input type="text" class="form-control" id="urlserv" placeholder="www.exemple.com/chemin" value="http://">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <a href="index.html" class="btn btn-primary" id="validurlservdefaut">URL par défaut</a>
+                        <button type="submit" class="btn btn-success pull-right" id="validurlserv">Valider</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="bootstrap/assets/js/jquery.js"></script>
+        <script src="js/jsStorage.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

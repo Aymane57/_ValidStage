@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Suivi des stages</title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+                  <script src="bootstrap/assets/js/html5shiv.js"></script>
+                  <script src="bootstrap/assets/js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="glyphicon glyphicon glyphicon-home"></span> Validation Stages
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">Suivi</a>
+                        </li>
+                        <li>
+                            <a href="affectationP1.html">Affectation</a>
+                        </li>
+                        <li>
+                            <a href="entreprise.html">Entreprises</a>
+                        </li>
+                        <li>
+                            <a href="parametres.html">
+                                <span class="glyphicon glyphicon-cog"></span> Paramètres
+                            </a>
+                        </li>				
+                    </ul>
+                    <button type="submit" class="btn navbar-btn btn-danger navbar-right" id="deconnexion">Déconnexion</button>					
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="alert alert-info">
+                <div class="text-center"><strong id="section"></strong></div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center" data-toggle="collapse" data-target="#listeSansStage"><span id="stat_sans"></span><br /></div>
+                <div class="list-group collapse in" id="listeSansStage"></div>
+            </div>
+            <div class="list-group text-center" id="alerte"></div>
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center" data-toggle="collapse" data-target="#listeAvecStage"><span id="stat_avec"></span><br /></div>
+                <div class="list-group collapse in" id="listeAvecStage"></div>
+            </div>
+            <div class="list-group text-center" id="alerte2"></div>
+        </div>
+        <script src="bootstrap/assets/js/jquery.js"></script>
+        <script src="js/jsStorage.js"></script>
+        <script src="js/fonctions.js"></script>
+        <script src="js/JSONListeEtudiantsSansStage.js"></script>
+        <script src="js/JSONListeEtudiantsAvecStage.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

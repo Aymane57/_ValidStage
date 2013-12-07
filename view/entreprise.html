@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Liste des entreprises</title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+          <script src="bootstrap/assets/js/html5shiv.js"></script>
+          <script src="bootstrap/assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="glyphicon glyphicon glyphicon-home"></span> Validation Stages
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">Suivi</a>
+                        </li>
+                        <li>
+                            <a href="affectationP1.html">Affectation</a>
+                        </li>
+                        <li class="active">
+                            <a href="entreprise.html">Entreprises</a>
+                        </li>
+                        <li>
+                            <a href="parametres.html">
+                                <span class="glyphicon glyphicon-cog"></span> Paramètres
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="submit" class="btn navbar-btn btn-danger navbar-right" id="deconnexion">Déconnexion</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="ajoutEntreprise.html" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                </div>
+                <div class="col-xs-9">
+                    <form class="form-inline" onSubmit="return false;">
+                        <div class="input-group">
+                            <input type="search" class="form-control" id="recherche" placeholder="Recherche" autofocus />
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary" id="buttonRechercher">
+                                    <span class="glyphicon glyphicon-search"></span> 
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center" id='lien'></div>
+            <div class="list-group" id="listEntreprises"></div>
+            <div class="list-group text-center" id="alerte"></div>
+        </div>
+        <script src="bootstrap/assets/js/jquery.js"></script>
+        <script src="js/jsStorage.js"></script>
+        <script src="js/JSONListeEntreprisesParam.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

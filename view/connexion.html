@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Connexion</title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/connexion.css">
+        <!--[if lt IE 9]>
+          <script src="bootstrap/assets/js/html5shiv.js"></script>
+          <script src="bootstrap/assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>		
+        <div class="container text-center">
+            <div class="list-group text-center">
+                <img class="img-responsive" src="images/Logo_IUT.png" alt="Logo Université"/>
+            </div>
+            <form class="form-signin" action="index.html" id="formulaire_valid" onSubmit="return false;">
+                <h2 class="form-signin-heading text-center">Authentification</h2>
+                <input type="text" class="form-control" placeholder="Identifiant" id="login" autofocus>
+                <input type="password" class="form-control" placeholder="Mot de passe" id="pwd">
+                <button class="btn btn-lg btn-success btn-block" type="submit" id="valider-connexion">Connexion</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" id="btn-reset">Changer de serveur</button>		 
+            </form>
+            <div class="list-group text-center" id="alerte"></div>
+        </div>	
+        <script src="bootstrap/assets/js/jquery.js"></script>
+        <script src="js/sha1.js"></script>
+        <script src="js/jsStorage.js"></script>
+        <script src="js/JSONConnexion.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

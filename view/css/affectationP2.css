@@ -1,0 +1,30 @@
+#etudiant {
+	font-size: 14px;
+	text-align: left;	
+}
+
+#libre,#encadrer{
+margin-left:20px;
+
+}
+
+#affecter{
+text-align:center;
+
+}
+
+#but_deconnect {
+	margin-top: 10px;
+	text-align: right;
+}
+
+#info_section{
+	cursor:pointer;
+}
+
+.lienDroite {float: right;}
+
+.navbar-brand
+{
+	font-size:14px;
+}

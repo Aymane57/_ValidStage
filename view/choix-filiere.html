@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Choix de la filière par défaut</title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+          <script src="bootstrap/assets/js/html5shiv.js"></script>
+          <script src="bootstrap/assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="alert alert-info text-center">
+                <p>Avant de continuer, vous devez <strong>indiquer la section</strong> sur laquelle vous souhaitez travailler.</p>
+                <p>Vous pouvez la changer à tout moment dans les <strong>paramètres</strong>.</p>
+            </div>
+            <div class="well">
+                <form role="form" action="index.html">
+                    <div class="form-group">
+                        <label for="filiere">Filière</label>
+                        <select id="filiere" class="form-control input-lg"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="annee">Année</label>
+                        <select class="form-control input-lg" id="annee"></select>
+                    </div>
+                    <button type="submit" class="btn btn-danger" id="deconnexion">Déconnexion</button>
+                    <button type="button" class="btn btn-success pull-right" id="validFiliere">Valider</button>
+                </form>
+            </div>
+            <div class="list-group text-center" id="alerte"></div>
+        </div>
+        <script src="bootstrap/assets/js/jquery.js"></script>
+        <script src="js/jsStorage.js"></script>
+        <script src="js/JSONChoixFiliere.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

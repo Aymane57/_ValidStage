@@ -1,0 +1,16 @@
+#info_section{
+	cursor:pointer;
+}
+
+.panel-heading{
+	cursor:pointer;
+}
+
+#urlserv,#filiere,#annee
+{
+		height:50px;
+}
+
+body{
+	margin-top: 75px;
+}
